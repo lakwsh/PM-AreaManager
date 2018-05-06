@@ -1,0 +1,44 @@
+name: AreaManage
+main: lakwsh\AreaManage\AreaManage
+version: 55
+api: [2.0.0, 3.0.0-ALPHA1, 3.0.0-ALPHA2, 3.0.0-ALPHA3, 3.0.0-ALPHA4]
+load: STARTUP
+author: lakwsh
+website: https://lakwsh.net
+
+commands:
+ area:
+  usage: "/area <1/2/rm/set/srm/cp/pt>"
+  permission: AreaManage.area
+  description: "快速建造/区域保护选点"
+ ul:
+  usage: "/ul <player> <set/srm/rm/pt>"
+  permission: AreaManage.unlock
+  description: "危险操作确认"
+ land:
+  usage: "/land <b/n/nw/d/f/w/l/g/a/s> {<区域名>} {<效果名(pvp/edit/touch/move)/玩家名>}"
+  permission: AreaManage.land
+  description: "设置区域保护"
+ lw:
+  usage: "/lw"
+  permission: AreaManage.lw
+  description: "显示所有世界"
+ w:
+  usage: "/w <地图名>"
+  permission: AreaManage.w
+  description: "传送到另一个世界"
+
+permissions:
+ AreaManage:
+  default: false
+  children:
+   AreaManage.area:
+    default: true
+   AreaManage.unlock:
+    default: op
+   AreaManage.land:
+    default: true
+   AreaManage.lw:
+    default: true
+   AreaManage.w:
+    default: true
