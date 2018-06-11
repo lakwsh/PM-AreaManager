@@ -1,6 +1,6 @@
-name: AreaManage
-main: lakwsh\AreaManage\AreaManage
-version: 1.0
+name: AreaManager
+main: AreaManager\Main
+version: 1.1
 api: [3.0.0, 3.0.0-ALPHA10, 3.0.0-ALPHA11, 3.0.0-ALPHA12]
 load: STARTUP
 author: lakwsh
@@ -9,24 +9,8 @@ website: https://lakwsh.net
 commands:
  area:
   usage: "/area <rm/set/srm/cp/pt>"
-  permission: AreaManage.area
-  description: "快速建造选点"
- lw:
-  usage: "/lw"
-  permission: AreaManage.lw
-  description: "显示所有世界"
- w:
-  usage: "/w <地图名>"
-  permission: AreaManage.w
-  description: "传送到另一个世界"
+  permission: AreaManager
 
 permissions:
- AreaManage:
-  default: false
-  children:
-   AreaManage.area:
-    default: true
-   AreaManage.lw:
-    default: true
-   AreaManage.w:
-    default: true
+ AreaManager:
+  default: true

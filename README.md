@@ -1,5 +1,4 @@
-# PM-AreaManage
-本插件由2018年5月6日起开源
-
-## 更新记录
-版本1 2018-5-25 更新为PMMP版本
+# AreaManager
+## ChangeLog
+2018/05/25 1.0 Update for pmmp version
+2018/06/12 1.1 multi language supported
