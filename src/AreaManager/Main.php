@@ -361,19 +361,19 @@ class Main extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Li
 			'Msg-WrongFile'=>'§c区域数据损坏!无法执行粘贴命令!'
 		));
 		new Config(AMCP.'lang_eng.yml',Config::DETECT,array(
-			'Msg-NotSameWorld'=>'§c两点需在同一地图内! 已重置!',
-			'Msg-Done'=>'§a完成.用时: &time&秒.',
-			'Msg-PointNotChoose'=>'§c请确认已选择两个位置,已重置',
-			'Msg-PointInfo'=>'§c共计处理&total&个方块',
-			'Msg-StartPoint'=>'§a开始位置: x=&x& y=&y& z=&z&',
-			'Msg-EndPoint'=>'§a结束位置: x=&x& y=&y& z=&z&',
-			'Msg-NotPerm'=>'§c你无权使用此命令',
-			'Msg-WorldNotLoad'=>'§c世界不存在或未加载',
-			'Msg-ChooseLoc'=>'请选择位置',
-			'Msg-PosSave'=>'已保存: x=&x& y=&y& z=&z&',
-			'Msg-ErrBlock'=>'§c错误的方块id.',
-			'Msg-FileNotExist'=>'§c请先复制一个区域后再调用此命令',
-			'Msg-WrongFile'=>'§c区域数据损坏!无法执行粘贴命令!'
+			'Msg-NotSameWorld'=>'§cPoint 1 must the same like Point 2 in the same Level!',
+			'Msg-Done'=>'§aDone. time consuming: &time&S.',
+			'Msg-PointNotChoose'=>'§cPlease confirm two points\'s position!',
+			'Msg-PointInfo'=>'§cTotal deal with&total&blocks',
+			'Msg-StartPoint'=>'§aStart position: x=&x& y=&y& z=&z&',
+			'Msg-EndPoint'=>'§aEnd position: x=&x& y=&y& z=&z&',
+			'Msg-NotPerm'=>'§cYou haven\'t permission to use this command!',
+			'Msg-WorldNotLoad'=>'§cCannot find this Level or this Level doesn\'t enable.',
+			'Msg-ChooseLoc'=>'Please choose a position.',
+			'Msg-PosSave'=>'Saved successful: x=&x& y=&y& z=&z&',
+			'Msg-ErrBlock'=>'§cincorrect block id.',
+			'Msg-FileNotExist'=>'§cPlease choose an area and copy it, then you can to use this command!',
+			'Msg-WrongFile'=>'§cArea Damage!Unable to execute paste command!'
 		));
 		$lang=self::$cfg['language'];
 		if($lang!=='chs' and $lang!=='eng') $lang='eng';
